@@ -1,4 +1,4 @@
-import { generateRSS } from './index';
+import { generateRSS } from './rss';
 import type { RSSFeedOptions, RSSItem, AstroRSSConfig } from './types';
 
 export function createRSSFromAstroCollection<T = any>(
@@ -41,4 +41,3 @@ export function createRSSFromAstroCollection<T = any>(
 }
 
 export * from './types';
-export { generateRSS } from './index';

@@ -1,15 +1,16 @@
 {
   "name": "ts-rss-builder",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "RSS builder in Typescript, tailored to Astro. For NN1.dev",
   "type": "module",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/types/index.d.ts"
     }
   },
   "files": [
@@ -18,7 +19,12 @@
   "scripts": {
     "build": "rollup -c"
   },
-  "keywords": ["rss", "astro", "typescript", "xml"],
+  "keywords": [
+    "rss",
+    "astro",
+    "typescript",
+    "xml"
+  ],
   "author": "Preston Arnold",
   "license": "ISC",
   "packageManager": "pnpm@10.12.2",
