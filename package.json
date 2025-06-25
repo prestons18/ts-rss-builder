@@ -1,6 +1,6 @@
 {
   "name": "ts-rss-builder",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "RSS builder in Typescript, tailored to Astro. For NN1.dev",
   "type": "module",
   "main": "dist/index.js",
